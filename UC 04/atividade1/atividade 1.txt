@@ -1,0 +1,75 @@
+Create database Super
+
+Create Table produtos(
+    nome             varchar (200),
+    telefone         varchar (13),
+    data                date (10),
+    animal           varchar (15),
+    necessidade      varchar (200)
+);
+
+INSERT INTO preAgendamento (nome,telefone,data,animal,necessidade) VALUES 
+('chico','123456789','03/07/2021','Cachorro','Banho e Tosa'); 
+
+SELECT FROM * preAgendamento
+
+
+Fase 1
+
+create table Produtos(
+idProduto int(4) auto_increment primary key,
+nomeProduto varchar(200),
+valorProduto double (9,2),
+quantidadeProduto int(9),
+Primary Key (idProduto));
+
+Fase 2
+
+insert into Produtos(nomeProduto, valorProduto, quantidadeProduto) values ('Batata-branca',1.7,120);
+insert into Produtos(nomeProduto, valorProduto, quantidadeProduto) values ('Tomate',4.3,65);
+insert into Produtos(nomeProduto, valorProduto, quantidadeProduto) values ('Cebola roxa',2.85,70);
+insert into Produtos(nomeProduto, valorProduto, quantidadeProduto) values ('Abóbora',0.70,110);
+insert into Produtos(nomeProduto, valorProduto, quantidadeProduto) values ('Pimentão',3.50,80);
+insert into Produtos(nomeProduto, valorProduto, quantidadeProduto) values ('Arroz',8.5,200);
+insert into Produtos(nomeProduto, valorProduto, quantidadeProduto) values ('Feijão',5.39,240);
+insert into Produtos(nomeProduto, valorProduto, quantidadeProduto) values ('Farinha',2.79,300);
+insert into Produtos(nomeProduto, valorProduto, quantidadeProduto) values ('Açúcar',4.59,150);
+insert into Produtos(nomeProduto, valorProduto, quantidadeProduto) values ('Óleo de soja',1.99,400);
+
+Fase 3
+
+insert into candidatos (nome, experiencia) values ('João Paulo','Atendente de padaria');
+insert into candidatos (nome, experiencia) values ('Adamastor Júnior','Repositor');
+insert into candidatos (nome, experiencia) values ('Ana Cláudia','Atendente de caixa');
+insert into candidatos (nome, experiencia) values ('Daltron Silva','Mecânico de carros');
+insert into candidatos (nome, experiencia) values ('Tiel Evandro','Lavador de carros');
+insert into candidatos (nome, experiencia) values ('Amanda Carvalho','Atendente de caixa'
+insert into candidatos (nome, experiencia) values ('Norberto da Silva','Atendente de padaria');
+insert into candidatos (nome, experiencia) values ('Fabrício Guimarães','Açogueiro');
+insert into candidatos (nome, experiencia) values ('Paulo Andre','Açogueiro');
+insert into candidatos (nome, experiencia) values ('Custodio Aparecido','Padeiro');
+insert into candidatos (nome, experiencia) values ('Ana Cláudia','Atendente de caixa');
+insert into candidatos (nome, experiencia) values ('Carlos Cavalcante','Motorista');
+insert into candidatos (nome, experiencia) values ('Eduardo Alves','Assistente Administrativo');
+insert into candidatos (nome, experiencia) values ('Amanda Carvalho','Atendente de caixa');
+insert into candidatos (nome, experiencia) values ('Clóvis Nogueira','Atendente de padaria');
+insert into candidatos (nome, experiencia) values ('Marcelo de Assis','Empacotador');
+
+nome	experiencia
+João Paulo	Atendente de padaria
+Adamastor Júnior	Repositor
+Ana Cláudia	Atendente de caixa
+Daltron Silva	Mecânico de carros
+Tiel Evandro	Lavador de carros
+Amanda Carvalho	Atendente de caixa
+Norberto da Silva	Atendente de padaria
+Fabrício Guimarães	Açougueiro
+Paulo Andre	Açougueiro
+Custodio Aparecido	Padeiro
+Maria Dolores	Atendente de caixa
+Carlos Cavalcante	Motorista
+Eduardo Alves	Assistente Administrativo
+Alexandra Ribeiro	Atendente de caixa
+Clóvis Nogueira	Atendente de padaria
+Marcelo de Assis	Empacotador
+

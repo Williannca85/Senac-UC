@@ -1,0 +1,96 @@
+﻿Fase1
+
+create table produtos(
+idproduto int not null auto_increment,
+nomeProduto varchar(30),
+valorProduto double (6,2),
+quantidadeProduto int(9),
+Primary Key (idproduto)
+)default charset = utf8;
+
+Fase 2
+
+INSERT INTO produtos VALUES
+(DEFAULT,'Pão de manteiga',3.5,125,'Padaria'),
+(DEFAULT,'Manteiga',5.99,60,'Padaria'),
+(DEFAULT,'Xampu',6.99,200,'Perfumaria'),
+(DEFAULT,'Sabonete',0.89,500,'Perfumaria'),
+(DEFAULT,'Tomate',3.9,58,'Hortifruti'),
+(DEFAULT,'Cebola roxa',2.99,50,'Hortifruti'),
+(DEFAULT,'Arroz',2.5,200,'Alimentos'),
+(DEFAULT,'Feijão',3.69,250,'Alimentos');
+
+SELECT nomeProduto, valorProduto, valorProduto * 1.2 as TotalAcres FROM produtos
+
+Fase 3
+
+INSERT into funcionarios SELECT * FROM candidatos WHERE experiencia = 'atendente de caixa';
+INSERT into funcionarios SELECT * FROM candidatos WHERE experiencia = 'atendente de padaria';
+INSERT into funcionarios SELECT * FROM candidatos WHERE experiencia = 'repositor';
+
+Fase 4
+
+ALTER TABLE funcionarios
+ADD COLUMN cpf varchar (11) UNIQUE AFTER nomeFuncionario;
+
+SELECT * FROM `selecionados`;
+UPDATE funcionarios set cpf = 00061690935 WHERE idFuncionarios = 1;
+UPDATE funcionarios set cpf = 45061690935 WHERE idFuncionarios = 2;
+UPDATE funcionarios set cpf = 09865880935 WHERE idFuncionarios = 3;
+UPDATE funcionarios set cpf = 33256987525 WHERE idFuncionarios = 6;
+UPDATE funcionarios set cpf = 00235656565 WHERE idFuncionarios = 7;
+
+Fase 5
+
+CREATE TABLE consumidor(
+idConsumidor int AUTO_INCREMENT,
+tipoConsumidor varchar	(80),
+PRIMARY KEY (idConsumidor)
+);
+
+CREATE TABLE venda(
+idVenda int AUTO_INCREMENT,
+idConsumidor int,
+valorTotalVenda double,
+PRIMARY KEY (idVenda),
+FOREIGN KEY (idConsumidor) 
+REFERENCES consumidor (idconsumidor)
+);
+
+INSERT INTO `venda`VALUES 
+(DEFAULT, 1,1),
+(DEFAULT, 1,2),
+(DEFAULT, 2,1),
+(DEFAULT, 2,2),
+(DEFAULT, 3,1),
+(DEFAULT, 3,2);
+
+
+CREATE TABLE itens_vendidos(
+idVenda int,
+idProduto int,
+quantidadeVendida int (100),
+valorProduto double (6,2),
+valorTotalProduto double (6,2),
+PRIMARY KEY (idVenda, idProduto),
+FOREIGN KEY (idVenda) REFERENCES venda (idVenda),
+FOREIGN KEY (idProduto) REFERENCES produtos (idProduto)
+);
+
+INSERT INTO `itens_vendidos` VALUES 
+(1,22,2,6.99,quantidadeVendida * valorProduto),
+(2,26,3,2.50,quantidadeVendida * valorProduto),
+(3,26,2,2.50,quantidadeVendida * valorProduto),
+(4,27,1,3.69,quantidadeVendida * valorProduto),
+(5,24,5,3.90,quantidadeVendida * valorProduto),
+(6,25,10,2.99,quantidadeVendida * valorProduto);
+
+INSERT into consumidor VALUES
+(DEFAULT, 'Aline'),
+(DEFAULT, 'Beatriz'),
+(DEFAULT, 'Claudio');
+
+INSERT INTO `consumidor`(`tipoConsumidor`) VALUES ('ConsumidorFinal');
+
+INSERT INTO funcionarios VALUES
+(DEFAULT, 'Tadeu', '98712348625', 'Repositor');
