@@ -1,0 +1,13 @@
+C:\Users\natha\Downloads\Pimpo\Senha\bin\Debug\netcoreapp3.1\Senha.exe
+C:\Users\natha\Downloads\Pimpo\Senha\bin\Debug\netcoreapp3.1\Senha.deps.json
+C:\Users\natha\Downloads\Pimpo\Senha\bin\Debug\netcoreapp3.1\Senha.runtimeconfig.json
+C:\Users\natha\Downloads\Pimpo\Senha\bin\Debug\netcoreapp3.1\Senha.runtimeconfig.dev.json
+C:\Users\natha\Downloads\Pimpo\Senha\bin\Debug\netcoreapp3.1\Senha.dll
+C:\Users\natha\Downloads\Pimpo\Senha\bin\Debug\netcoreapp3.1\Senha.pdb
+C:\Users\natha\Downloads\Pimpo\Senha\obj\Debug\netcoreapp3.1\Senha.csprojAssemblyReference.cache
+C:\Users\natha\Downloads\Pimpo\Senha\obj\Debug\netcoreapp3.1\Senha.AssemblyInfoInputs.cache
+C:\Users\natha\Downloads\Pimpo\Senha\obj\Debug\netcoreapp3.1\Senha.AssemblyInfo.cs
+C:\Users\natha\Downloads\Pimpo\Senha\obj\Debug\netcoreapp3.1\Senha.csproj.CoreCompileInputs.cache
+C:\Users\natha\Downloads\Pimpo\Senha\obj\Debug\netcoreapp3.1\Senha.dll
+C:\Users\natha\Downloads\Pimpo\Senha\obj\Debug\netcoreapp3.1\Senha.pdb
+C:\Users\natha\Downloads\Pimpo\Senha\obj\Debug\netcoreapp3.1\Senha.genruntimeconfig.cache
